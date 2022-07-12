@@ -49,7 +49,7 @@ public class FirstAndroidTest {
 
     //region First Sample Test
     @Test
-    public void createLoginUser() {
+    public void clickAppButton() {
         // Code
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='App']")).click();
     }
