@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite" parallel="false" verbose="2">
+    <test name="CreateAccountTest" verbose="2">
+        <classes>
+            <class name="testCases.LoginTest">
+                <methods>
+                    <include name="verifyUserCreation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

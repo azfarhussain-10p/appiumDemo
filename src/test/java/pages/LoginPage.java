@@ -52,7 +52,7 @@ public class LoginPage {
 
     public void enterValidEmailAddress() {
         new WebDriverWait(AppDriver.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(by_pageHeader));
-        emailAddress.sendKeys("appiumDemoTest002@mailinator.com");
+        emailAddress.sendKeys("appiumDemoTest007@mailinator.com");
     }
 
     public void clickContinueButton() {
