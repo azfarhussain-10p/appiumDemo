@@ -6,6 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.LoginPage;
+import utilities.ExcelUtils;
 
 import java.net.MalformedURLException;
 
@@ -15,6 +16,7 @@ public class LoginTest {
 
     @BeforeTest
     public void setup() throws MalformedURLException {
+        ExcelUtils.readExcelFile();
         AppFactory.initializer();
         loginPage = new LoginPage();
     }
@@ -24,12 +26,12 @@ public class LoginTest {
         loginPage.clickCreateAccountButton();
         Assert.assertTrue(loginPage.pageHeader.isDisplayed());
         System.out.println("Email Address Page is Displayed");
-        loginPage.enterValidEmailAddress();
+        loginPage.enterValidEmailAddress(ExcelUtils.GetCellValue(1, 0));
         loginPage.clickContinueButton();
         Assert.assertTrue((loginPage.createPasswordHeader.isDisplayed()));
         System.out.println("Password Page is Displayed");
-        loginPage.enterPassword();
-        loginPage.enterConfirmPassword();
+        loginPage.enterPassword(ExcelUtils.GetCellValue(1, 1));
+        loginPage.enterConfirmPassword(ExcelUtils.GetCellValue(1, 1));
         loginPage.clickSignInButton();
         System.out.println("Creating New User Account");
         Thread.sleep(1000);
