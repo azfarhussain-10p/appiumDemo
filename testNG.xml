@@ -6,6 +6,11 @@
             <class name="testCases.LoginTest">
                 <methods>
                     <include name="verifyUserCreation"/>
+                    <include name="sampleTestOne"/>
+                    <include name="sampleTestTwo"/>
+                    <include name="sampleTestThree"/>
+                    <include name="sampleTestFour"/>
+                    <include name="sampleTestFive"/>
                 </methods>
             </class>
         </classes>
