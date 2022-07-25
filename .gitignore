@@ -132,3 +132,7 @@ About
 You have no unread notifications
 
 target/
+
+# Add Allure Result directory
+allure-results/*.json
+!allure-results/categories.json
