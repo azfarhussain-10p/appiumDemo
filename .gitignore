@@ -8,6 +8,35 @@ Explore
 @azfarhussain-10p
 azfarhussain-10p
 /
+appiumDemo
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+appiumDemo/.gitignore
+@azfarhussain-10p
+azfarhussain-10p Lecture-5 Implementing Reporting Framework
+Latest commit 3d6d052 8 days ago
+ History
+ 1 contributor
+138 lines (116 sloc)  2.03 KB
+
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@azfarhussain-10p
+azfarhussain-10p
+/
 testRepo
 Public
 Code
@@ -132,3 +161,21 @@ About
 You have no unread notifications
 
 target/
+
+# Add Allure Result directory
+allure-results/*.json
+!allure-results/categories.json
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
